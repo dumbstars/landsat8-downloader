@@ -18,3 +18,7 @@ python libraries used are :-
 3. datetime
 
 to execute the project, execute the following command on terminal
+cd landsat_downloader
+ls
+landsat_downloader scrapy.cfg
+scrapy crawl landsat_downloader
