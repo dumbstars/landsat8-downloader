@@ -3,7 +3,7 @@ After cloning this repository, set a few variables as follows
 
 In landsat_downloader.py :-
 1. at line 1 set LIMIT to the maximum number of scenes for which you want to download data
-2. at line 2 set the file path where the scene_list file and get_urls_log file is stored
+2. at line 2 set the FILE_PATH to the directory where the scene_list file and get_urls_log file is stored
 
 [scene_list file is available at https://landsat-pds.s3.amazonaws.com/c1/L8/scene_list.gz and contains meta data about all the available satellite data]
 
@@ -17,7 +17,9 @@ python libraries used are :-
 2. pickle
 3. datetime
 
-to execute the project, execute the following command on terminal
+Note : Before executing the project, download the scene_list file from the url above and save it in the FILE_PATH directory
+
+To execute the project, execute the following command on terminal
 cd landsat_downloader
 ls
 landsat_downloader scrapy.cfg
