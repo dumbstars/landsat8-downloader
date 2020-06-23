@@ -1,4 +1,4 @@
-LIMIT = 100
+LIMIT = 100000
 FILE_PATH = '/home/shivam/data/college/PS 1/BISAG/data/'
 
 path_p = 5
@@ -90,20 +90,20 @@ class LandsatDownloader(scrapy.Spider):
             link = link.xpath(".//@href").extract_first()
 
         # DOWNLOAD ONLY SMALL TEXT FILES
-            if '.txt' in link:
-                loader.add_value('file_name', link)
-                link = response.urljoin(link)
-                loader.add_value('file_urls', link)
-                # loader.add_xpath('file_name', ".//text()")
+#             if '.txt' in link:
+#                 loader.add_value('file_name', link)
+#                 link = response.urljoin(link)
+#                 loader.add_value('file_urls', link)
+#                 # loader.add_xpath('file_name', ".//text()")
 
-                yield loader.load_item()
+#                 yield loader.load_item()
 
-            # DOWNLOAD ALL FILES
-            # loader.add_value('file_name', link)
-            # link = response.urljoin(link)
-            # loader.add_value('file_urls', link)
-            # # loader.add_xpath('file_name', ".//text()")
-            # yield loader.load_item()
+#             DOWNLOAD ALL FILES
+            loader.add_value('file_name', link)
+            link = response.urljoin(link)
+            loader.add_value('file_urls', link)
+            # loader.add_xpath('file_name', ".//text()")
+            yield loader.load_item()
 
         # DOWNLOAD SPECIFIC FILE
         # loader = ItemLoader(item = FileDownloadTutorialItem())
