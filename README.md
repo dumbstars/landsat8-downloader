@@ -11,3 +11,10 @@ In landsat_downloader.py :-
 
 In settings.py
 1. at line 73, set the path for the downloads folder is located
+
+python libraries used are :-
+1. scrapy
+2. pickle
+3. datetime
+
+to execute the project, execute the following command on terminal
