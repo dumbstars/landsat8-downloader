@@ -79,7 +79,7 @@ class LandsatDownloader(scrapy.Spider):
     name = 'landsat_downloader'
 
     start_urls = get_urls()
-    print(start_urls)
+    # print(start_urls)
     # start_urls = [
     #     'https://s3-us-west-2.amazonaws.com/landsat-pds/c1/L8/149/039/LC08_L1TP_149039_20200606_20200606_01_RT/index.html'
     # ]
