@@ -1,5 +1,5 @@
 LIMIT = 100000
-FILE_PATH = '/home/shivam/data/college/PS 1/BISAG/data/'
+FILE_PATH = '/'
 
 path_p = 5
 row_p = 6
