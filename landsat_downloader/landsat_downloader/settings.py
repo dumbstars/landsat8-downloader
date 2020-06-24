@@ -70,7 +70,7 @@ ITEM_PIPELINES = {
 
 # DOWNLOAD_TIMEOUT = 1200
 
-FILES_STORE = '/home/shivam/data/college/PS 1/BISAG/data/downloads'
+FILES_STORE = '/'
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
